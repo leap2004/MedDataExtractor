@@ -59,6 +59,10 @@ To process images and extract information using this tool, follow these steps:
    - Preprocessed images with removed background: `output_images_noBackground`
    - Aggregated CSV file: `output_csv/aggregated_data.csv`
 
+## Example
+A sample image has been provided for users to see how MedDataExtractor works
+
+
 ## Acknowledgments
 
 This project uses the following libraries and tools:
