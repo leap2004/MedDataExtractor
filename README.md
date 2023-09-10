@@ -61,7 +61,7 @@ To process images and extract information using this tool, follow these steps:
 
 ## Example
 A sample image has been provided for users to see how MedDataExtractor works
-![Angiography Scan Analysis](images/angiography sample.jpg)
+![Angiography Sample](angiography\ sample.jpg)
 
 
 ## Acknowledgments
