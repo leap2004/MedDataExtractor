@@ -60,7 +60,7 @@ To process images and extract information using this tool, follow these steps:
    - Aggregated CSV file: `output_csv/aggregated_data.csv`
 
 ## Example
-A sample image has been provided for users to see how MedDataExtractor works
+A sample image has been provided for users to see how MedDataExtractor works. 
 Please feel free to use the sample or your own scans to use MedDataExtractor!
 ![Angiography Sample](angiography_sample.jpg)
 
