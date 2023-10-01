@@ -1,4 +1,3 @@
-from image_processor import ImageProcessor
 from text_extractor import TextExtractor
 from image_cleaner import ImageCleaner
 
@@ -12,18 +11,17 @@ def get_user_input():
     return input_image_path, output_image_path_noBackground, output_image_path_noText, output_text_path, output_csv_path
 
 def process_images(input_image_path, output_image_path_noBackground, output_text_path, output_csv_path):
-    image_processor = ImageProcessor(input_image_path, output_image_path_noBackground, output_text_path)
     text_extractor = TextExtractor(output_text_path, output_csv_path)
-    image_cleaner = ImageCleaner(input_image_path, output_image_path_noText)
+    image_cleaner = ImageCleaner(output_image_path_noBackground, output_image_path_noText)
 
     # Perform image processing
-    image_cleaner.remove_background_keep_text()
+    image_cleaner.remove_background_keep_text(input_image_path)
 
     # Extract text from processed images
     text_extractor.text_extract(output_image_path_noBackground)
 
     # Remove text from the original input images
-    image_cleaner.remove_text()
+    image_cleaner.remove_text(input_image_path)
 
     # Generate the CSV with extracted information
     text_extractor.output_csv()
